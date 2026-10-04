@@ -6,7 +6,7 @@
     runs-on: ubuntu-latest
     steps:
       - name: running this step
-      - run: echo "Hello GHWF"
+        run: echo "Hello GHWF"
       - name: checking the os release.
-      - run: cat /etc/os-release
+        run: cat /etc/os-release
       
