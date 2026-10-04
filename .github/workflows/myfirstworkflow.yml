@@ -21,6 +21,31 @@
         run: |
          echo "Hello is the message"
          echo "current date is 'date'"
+      - name: sleep time
+        run: sleep 20
+   job_id_3:
+    name: 23rd_job
+    needs: job_id_1
+    runs-on: ubuntu-latest
+    steps:
+      - name: listing the hostname
+        run: hostname
+      - name: called sleep again
+        run: sleep 10
+   job_id_4:
+    name: 4th_job
+    needs:
+      - job_id_1, job_id_2, job_id_3
+    runs-on: ubuntu-latest
+    steps:
+      - name: just running the echo command
+        run: echo "You are the best"
+
+
+
+
+
+         
       - name: holding until sleep
         run: sleep 15
    
