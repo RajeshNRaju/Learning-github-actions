@@ -1,2 +1,12 @@
  name : myfirstworflow
  on : push
+ jobs:
+   job_id:
+    name: job_one
+    runs-on: ubuntu-latest
+    steps:
+      - name: running this step
+      - run: echo "Hello GHWF"
+      - name: checking the os release.
+      - run: cat /etc/os-release
+      
