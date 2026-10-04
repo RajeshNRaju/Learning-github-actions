@@ -1,7 +1,7 @@
  name : myfirstworflow
  on : push
  jobs:
-   job_id:
+   job_id_1:
     name: job_one
     runs-on: ubuntu-latest
     steps:
@@ -9,4 +9,18 @@
         run: echo "Hello GHWF"
       - name: checking the os release.
         run: cat /etc/os-release
-      
+      - name: calling sleep.
+        run: sleep 10
+   job_id_2:
+    name: 2nd_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: listing the PWD
+        run: pwd
+      - name: Im learning GHA
+        run: |
+         echo "Hello is the message"
+         echo "current date is 'date'"
+      - name: holding until sleep
+        run: sleep 15
+   
