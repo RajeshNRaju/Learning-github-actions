@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - name: checkout actions
-        uses: actions/checkout@v7.0.1
+
       - name: print hostname
         run: |
           hostname
@@ -18,3 +17,5 @@ jobs:
           cd new_folder1
           touch file1.txt file2.txt file3.txt
           ls -l
+      - name: checkout actions
+        uses: actions/checkout@v7.0.1
