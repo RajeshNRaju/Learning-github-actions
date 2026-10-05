@@ -1,4 +1,0 @@
-name: Scheule test
-on:
-  schedule:
-    - cron:"5****"
