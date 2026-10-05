@@ -12,5 +12,5 @@ jobs:
         run: |
           hostname
           mkdir new_folder1
-          cd mew_folder1
-          touch /file1.txt
+          cd new_folder1
+          touch ./file1.txt
