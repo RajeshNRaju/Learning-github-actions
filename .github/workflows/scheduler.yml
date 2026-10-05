@@ -2,11 +2,14 @@ name: Scheule test
 on:
   schedule:
     - cron: "45 5 * * *"
-
+  push:
 jobs:
   jobA:
     name: schedule to run in 2 mins past every hr
     runs-on: ubuntu-latest
     steps:
       - name: print hostname
-        run: hostname
+        run: |
+          hostname
+          mkdir new_folder1
+          touch new_folder/file1.txt
