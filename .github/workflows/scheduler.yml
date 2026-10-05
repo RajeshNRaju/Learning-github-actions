@@ -14,9 +14,4 @@ jobs:
           mkdir new_folder1
           cd new_folder1
           touch ./file1.txt
-          nano file1.txt
-          Hello there
-          ^O
-          ^X
-          cat file1.txt
           ls -ltr
