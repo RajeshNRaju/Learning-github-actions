@@ -10,7 +10,7 @@ jobs:
    
     steps:
       - name: checkout actions
-        uses: action/checkout@v7.0.1
+        uses: actions/checkout@v7.0.1
       - name: print hostname
         run: |
           hostname
