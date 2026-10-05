@@ -8,5 +8,5 @@ jobs:
     name: schedule
     runs-on: ubuntu-latest
     steps:
-      - name: print hostname
+      - name: print hostnam
         run: hostname
