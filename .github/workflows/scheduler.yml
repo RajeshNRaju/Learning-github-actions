@@ -1,7 +1,7 @@
 name: Scheule test
 on:
   schedule:
-    - cron: "2 * * * *"
+    - cron: "37 5 * * *"
 
 jobs:
   jobA:
