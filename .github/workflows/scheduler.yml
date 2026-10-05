@@ -2,11 +2,10 @@ name: Scheule test
 on:
   schedule:
     - cron: "2 * * * *"
-  push:
 
 jobs:
   jobA:
-    name: schedule
+    name: schedule to run in 2 mins past every hr
     runs-on: ubuntu-latest
     steps:
       - name: print hostname
