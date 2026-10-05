@@ -13,5 +13,5 @@ jobs:
           hostname
           mkdir new_folder1
           cd new_folder1
-          touch ./file1.txt
-          ls -ltr
+          touch file1.txt
+          ls -l
